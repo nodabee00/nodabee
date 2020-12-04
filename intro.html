@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>It's intro page. Plz enjoy.</title>
+    <style media="screen">
+          @font-face {
+        font-family: 'DOSMyungjo';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSMyungjo.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      body{
+        margin : 0;
+        background-color : black;
+        overflow: hidden;
+        font-size: 62.5%;
+      }
+      .video{
+        width:100%;
+        height:100%;
+      }
+      video{
+        height : 100vh;
+        width : 100%;
+      }
+      .skipbutton{
+        font-family: 'DOSMyungjo', 'nomal';
+        font-size: 1.5rem;
+        position : absolute;
+        position: fixed;
+        right : 38px;
+        top : 0px;
+        cursor : pointer;
+
+        background-color: black;
+        color:white;
+
+      }
+      #soundButton{
+        font-family: 'DOSMyungjo', 'nomal';
+        font-size: 1.5rem;
+        display: inline;
+        position:fixed;
+        left:38px;
+        top:0px;
+        cursor:pointer;
+        background-color: black;
+        color:white;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+
+    <div class="video">
+      <video id="vid" autoplay="autoplay" muted>
+        <source src="introReal.mp4" type="video/mp4">
+          video is not avilable. please use another wab browser.
+      </video>
+      </div>
+    <div class="skipbutton" OnClick="location.href ='fourth dimension/index.html'"> Skip
+    </div>
+    <div id="soundButton" onclick="playSound()" > Sound </div>
+
+    <script>
+      var vid = document.getElementById('vid');
+      var mutebtn = document.getElementById("soundButton");
+
+      if(vid.muted == true){
+        mutedbtn.style.display = inline;
+      }else{
+        mutedbtn.style.display = none;
+      };
+
+      vid.onended = function() {
+        window.location.href="fourth dimension/index.html";
+        };
+
+
+
+      function playSound(){
+        vid.muted = false;
+        document.querySelector('#soundButton').style.display = 'none';
+      };
+    </script>
+
+  </body>
+</html>

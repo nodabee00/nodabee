@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>It's intro page. Plz enjoy.</title>
+    <style media="screen">
+      body{
+        margin : 0;
+        background-color : black;
+        overflow: hidden;
+      }
+      .video{
+        width:100%;
+        height:100%;
+      }
+      video{
+        height : 100vh;
+        width : 100%;
+      }
+      img{
+        position : absolute;
+        width:10%;
+        left:45%;
+        top : 5px;
+        cursor : pointer;
+        }
+    </style>
+    <title></title>
+  </head>
+  <body>
+
+    <div class="video">
+      <video id="vid" autoplay controls muted playsinline>
+        <source src="introReal.mp4" type="video/mp4">
+          video is not avilable. please use another wab browser.
+      </video>
+      </div>
+    <div class="skipbutton">
+      <img src="skipbutton.png" value="skip" OnClick="location.href ='fourth dimension/index_mobile.html'">
+    </div>
+
+    <script>
+      document.getElementById('vid').play();
+      var vid = document.getElementById('vid');
+      vid.onended = function() {
+        window.location.href="fourth dimension/index_mobile.html";
+        };
+    </script>
+
+
+    </script>
+  </body>
+</html>
