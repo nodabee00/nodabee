@@ -215,67 +215,133 @@ function play1(){
 
   function modal1(){
         document.querySelector('#modal-bg1').style.display='block';
+        var playmodal = document.getElementById("modalReal1");
+        var data = { method: "play" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modal2(){
         document.querySelector('#modal-bg2').style.display='block';
+        var playmodal = document.getElementById("modalReal2");
+        var data = { method: "play" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modal3(){
         document.querySelector('#modal-bg3').style.display='block';
+        var playmodal = document.getElementById("modalReal3");
+        var data = { method: "play" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modal4(){
         document.querySelector('#modal-bg4').style.display='block';
+        var playmodal = document.getElementById("modalReal4");
+        var data = { method: "play" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modal5(){
         document.querySelector('#modal-bg5').style.display='block';
+        var playmodal = document.getElementById("modalReal5");
+        var data = { method: "play" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modal6(){
         document.querySelector('#modal-bg6').style.display='block';
+        var playmodal = document.getElementById("modalReal6");
+        var data = { method: "play" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modal7(){
         document.querySelector('#modal-bg7').style.display='block';
+        var playmodal = document.getElementById("modalReal7");
+        var data = { method: "play" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modal8(){
         document.querySelector('#modal-bg8').style.display='block';
+        var playmodal = document.getElementById("modalReal8");
+        var data = { method: "play" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modal9(){
         document.querySelector('#modal-bg9').style.display='block';
+        var playmodal = document.getElementById("modalReal9");
+        var data = { method: "play" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modal10(){
         document.querySelector('#modal-bg10').style.display='block';
+        var playmodal = document.getElementById("modalReal10");
+        var data = { method: "play" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modal11(){
         document.querySelector('#modal-bg11').style.display='block';
+        var playmodal = document.getElementById("modalReal11");
+        var data = { method: "play" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modalClose1(){
         document.querySelector('#modal-bg1').style.display='none';
+        var playmodal = document.getElementById("modalReal1");
+        var data = { method: "pause" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modalClose2(){
         document.querySelector('#modal-bg2').style.display='none';
+        var playmodal = document.getElementById("modalReal2");
+        var data = { method: "pause" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modalClose3(){
         document.querySelector('#modal-bg3').style.display='none';
+        var playmodal = document.getElementById("modalReal3");
+        var data = { method: "pause" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modalClose4(){
         document.querySelector('#modal-bg4').style.display='none';
+        var playmodal = document.getElementById("modalReal4");
+        var data = { method: "pause" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modalClose5(){
         document.querySelector('#modal-bg5').style.display='none';
+        var playmodal = document.getElementById("modalReal5");
+        var data = { method: "pause" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modalClose6(){
         document.querySelector('#modal-bg6').style.display='none';
+        var playmodal = document.getElementById("modalReal6");
+        var data = { method: "pause" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modalClose7(){
         document.querySelector('#modal-bg7').style.display='none';
+        var playmodal = document.getElementById("modalReal7");
+        var data = { method: "pause" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modalClose8(){
         document.querySelector('#modal-bg8').style.display='none';
       };
+      var playmodal = document.getElementById("modalReal8");
+      var data = { method: "pause" };
+      playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       function modalClose9(){
         document.querySelector('#modal-bg9').style.display='none';
+        var playmodal = document.getElementById("modalReal9");
+        var data = { method: "pause" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modalClose10(){
         document.querySelector('#modal-bg10').style.display='none';
+        var playmodal = document.getElementById("modalReal10");
+        var data = { method: "pause" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
       function modalClose11(){
         document.querySelector('#modal-bg11').style.display='none';
+        var playmodal = document.getElementById("modalReal11");
+        var data = { method: "pause" };
+        playmodal.contentWindow.postMessage(JSON.stringify(data), "*");
       };
