@@ -121,18 +121,36 @@ strong{
   text-decoration: underline;
 }
 .backgroundvideo{
-  position: absolute;
-  width:100%;
-  height: 100%;
+  padding: 0;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   position: relative;
   z-index: -5;
 }
-.backgroundvideo video{
-  position: absolute;
-  object-fit: fill;
-  width:100%;
-  height:100%;
-}
-#modal-bg1{
+.backgroundvideo iframe{
+  box-sizing: border-box;
+    width: 177.77777778vh;
+    height: 56.25vw;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+
+    .backgroundvideo #mobile_iframe{
+      box-sizing: border-box;
+        width: 56.25vh;
+        height: 177.77777778vw;
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);}
+
+      #modal-bg1{
         height:100%;
         width:100%;
         display : none;
