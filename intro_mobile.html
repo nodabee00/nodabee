@@ -55,7 +55,7 @@
   <body>
 
     <div class="video">
-      <video id="vid" autoplay="autoplay" muted>
+      <video id="vid" autoplay="autoplay" muted playsinline onended="end()">
         <source src="introReal.mp4" type="video/mp4">
           video is not avilable. please use another wab browser.
       </video>
@@ -74,10 +74,9 @@
         mutedbtn.style.display = none;
       };
 
-      vid.onended = function() {
+      function end(){
         window.location.href="fourth dimension/index_mobile.html";
-        };
-
+      };
 
 
       function playSound(){
