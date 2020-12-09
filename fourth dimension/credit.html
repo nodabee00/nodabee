@@ -4,45 +4,97 @@
     <meta charset="utf-8">
     <title>ABOUT</title>
     <style media="screen">
+    @font-face {
+        font-family: 'DOSMyungjo';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSMyungjo.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      html{
+        font-family: 'DOSMyungjo', 'nomal';
+        font-size: 100%;
+
+      }
       body{
-        padding-top:100px;
+        padding-top:40px;
         background-color:black;
         color : white;
       }
       h1{
         margin-left:100px;
+        letter-spacing: 0.08rem;
+        word-spacing: 0.03rem;
       }
       h2{
         margin-left:150px;
+
+      }
+      mark{
+        color:black;
+        background-color: white;
       }
       ul{
         margin-left:180px;
+        line-height: 1.7rem;
+        font-size: 1.3rem;
       }
       li{
       list-style:none;
 
       }
+      .img_container{
+        display: block;
+        position: relative;
+        height: 174.625px;
+      }
       img{
+        position: absolute;
         margin-left:150px;
         width:140px;
         height:auto;
       }
+      .color{
+        position: absolute;
+        margin-left:150px;
+        width:140px;
+        height:auto;
+        z-index: -5;
+      }
+      a{
+        text-decoration: none;
+        color:white;
+        cursor: pointer;
+      }
+      a:hover{
+        color:yellow;
+
+      }
+      img:hover{
+        display:none;
+      }
     </style>
   </head>
   <body>
-    
-    <h1>Thank you for watching!</h1>
-    <img src="roh.jpg" alt="">
-    <h2>contact</h2>
+
+    <h1>Thanks for watching!</h1>
+    <div class="img_container">
+    <img src="roh.png" alt="">
+    <img class="color" src="roh_color.png" alt="">
+    </div>
+    <h2><mark>Contact</mark></h2>
     <ul>
       <li>Phone----------+82 10.4112.7837</li>
-      <li>E-mail----------gt9014@gmail.com / naver.com</li>
-      <li>INSTA----------@nodabee</li>
+      <li>E-mail---------gt9014@naver.com</li>
+      <li>INSTA----------<a href="https://www.instagram.com/nodabee/">@nodabee</a></li>
     </ul>
-    <h2>Link to Exhibition</h2>
+    <h2><mark>Link to Exhibition</mark></h2>
     <ul>
-      <li>dig deep</li>
+    <li>  <a href="https://digdeep.works">dig deep</a></li>
       <li>zipper bag</li>
+    </ul>
+    <h2><mark>Guest</mark></h2>
+    <ul>
+      <li><a href="http://linoit.com/users/gt9014/canvases/World4%20%2F%20%EC%82%AC%EC%9D%98%EC%84%B8%EA%B3%84%20">Click here</a></li>
     </ul>
   </body>
 </html>
